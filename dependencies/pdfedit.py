@@ -2,7 +2,7 @@ import fitz
 from PIL import Image
 
 
-def add_image_to_pdf(input_pdf_path, output_pdf_path, image_path, x, y, width, height):
+def createPdf(input_pdf_path, output_pdf_path, image_path, x, y, width, height):
 
     pdf_document = fitz.open(input_pdf_path)
 
@@ -15,3 +15,4 @@ def add_image_to_pdf(input_pdf_path, output_pdf_path, image_path, x, y, width, h
 
     pdf_document.save(output_pdf_path)
     pdf_document.close()
+    img = img.transpose(Image.FLIP_TOP_BOTTOM)
