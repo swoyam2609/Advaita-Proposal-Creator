@@ -6,5 +6,5 @@ org = input("Enter the organization of the reciever: ")
 add = input("Enter the address of the reciever: ")
 
 recipient.createImage(name, pos, org, add)
-pdfEdit.createPdf("./dependencies/template.pdf", f'./Output/{org}.pdf', "./temp/" + org + ".png", 90, 640, 180, 43)
+pdfEdit.createPdf("./dependencies/template.pdf", f'./Output/{org}.pdf', "./temp/" + org + ".png", 87, 630, 280, 55)
 print("Pdf saved in Output folder." + f'./Output/{org}.pdf')
