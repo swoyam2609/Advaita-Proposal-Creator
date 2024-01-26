@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 
-def create_and_save_image(string1, string2, string3):
+def create_and_save_image(string1, string2, string3, string4):
     width, height = 1800, 430
     background_color = 'white'
     image = Image.new('RGB', (width, height), background_color)
@@ -13,12 +13,12 @@ def create_and_save_image(string1, string2, string3):
     text_color = 'black'
 
     text1_position = (5, 5)
-    text2_position = (5, 105)
-    text3_position = (5, 205)
+    text2_position = (5, 115)
+    text3_position = (5, 225)
+    text4_position = (5, 335)
 
     draw.text(text1_position, string1, font=font, fill=text_color)
     draw.text(text2_position, string2, font=font, fill=text_color)
     draw.text(text3_position, string3, font=font, fill=text_color)
+    draw.text(text4_position, string4, font=font, fill=text_color)
     image.save(f'./temp/{string3}.png')
-
-create_and_save_image("Shri Manoj Kumar Pattnaik", "Chief Executive Officer", "Odisha Computer Application Center")
