@@ -7,7 +7,6 @@ def createPdf(input_pdf_path, output_pdf_path, image_path, x, y, width, height):
     pdf_document = fitz.open(input_pdf_path)
 
     img = Image.open(image_path)
-    img = img.transpose(Image.FLIP_TOP_BOTTOM)
     img.save(image_path)
 
     image = pdf_document[0].insert_image(
