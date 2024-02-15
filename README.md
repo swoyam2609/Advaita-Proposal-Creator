@@ -5,6 +5,7 @@ This Bash script generates a personalized PDF document using a template and reci
 ## Usage
 
 1. **Run the Script:**
+
    - Execute the script by running the following command in your terminal:
 
      ```bash
@@ -12,6 +13,7 @@ This Bash script generates a personalized PDF document using a template and reci
      ```
 
 2. **Provide Recipient Information:**
+
    - You will be prompted to enter the recipient's details, including their name, position, organization, and address.
 
 3. **PDF Generation:**
